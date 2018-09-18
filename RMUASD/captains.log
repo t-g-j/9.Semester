@@ -1,0 +1,27 @@
+##### Sep. 17 - 2018 #####
+Ground Control Station is setup on projektNet
+Username: uasd
+password: uasd
+
+The ip address is not set to be static however the ip is expected to be:
+10.126.128.15
+**
+Docking Pi 1 is setup on projektNet.
+Username: uasd
+password: uasd
+
+The ip address is not set to be static however the ip is expected to be:
+10.126.128.13
+**
+Docking Pi 2 i setup on ProjekNet.
+Physical marks: Heatsinks on every chip.
+
+Username: uasd
+password: uasd
+
+The ip address is not set to be static however the ip is expected to be:
+10.126.128.11
+
+*** NOTES ***
+The ip address for the ROS master on the GCS is hardcoded in the bash script in the pi(s) and the IP addres of the master is hardcoded on it's own bash file
+
