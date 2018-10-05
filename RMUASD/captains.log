@@ -1,3 +1,6 @@
+##### Sep. 20 - 2018 #####
+
+
 ##### Sep. 17 - 2018 #####
 Ground Control Station is setup on projektNet
 Username: uasd
@@ -24,4 +27,6 @@ The ip address is not set to be static however the ip is expected to be:
 
 *** NOTES ***
 The ip address for the ROS master on the GCS is hardcoded in the bash script in the pi(s) and the IP addres of the master is hardcoded on it's own bash file
+
+
 
