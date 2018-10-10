@@ -1,0 +1,41 @@
+*****  Sep 13 - 2018  ***** 
+## Network security. ##
+TCP/IP Network basics 
+OSI model.
+TCP/IP protocol Architecture Layers
+TCP/ip Protocol Suite
+
+TCP sørger for pakker kommer i den rigtige rækkeføge og hvis noget er out-of-order så bliver det gensendt. UPD det er "send and forget".
+
+
+DNS top domain servers are maintained in USA by a non-profit organisation.
+Man kan vha. dig & host se hvilke DNS request der bliver lavet når man tilgår hjemmesider.
+
+Network Access Translation genkender mine forskellige devices gennem 'intern' addresse og port nummer.
+
+
+## PI Cluster ##
+The Pi's are in a 3D printed rack with a switch glued on to the side.
+
+Each Pi is created with a container which we are to play in.
+All Pi's has a seperate firewall and each container has a firewall. ANd there is a port only for Mathias.
+
+For at komme på "min" Pi så skal man først på Pi manageren:
+ssh  thorj14@euron1.mmmi.sdu.dk
+
+Og bagefter ssh med min mail og bruge brugernavn & kodeordet:
+student
+Plz4Ch4nG3
+
+
+*****  Sep 20 - 2018  ***** 
+## Firewall ##
+Types of attack:
+	Intrusion
+	Denial f service
+	Infomation theft
+		Network sniffing
+
+*****  Oct 4 - 2018  ***** 
+
+
