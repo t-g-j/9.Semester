@@ -36,6 +36,17 @@ Types of attack:
 	Infomation theft
 		Network sniffing
 
-*****  Oct 4 - 2018  ***** 
+*****  Oct 11 - 2018  ***** 
 
+Select one attack and do the attack.
+Document it with a wiki and explain how you compromised and how you attacked it.
+Hand in 2 weeks before exam. Examn will be of how to prevent that kind of attack.
+Curriculum will a list of questions we will get in advance.
+Youtube videos from hack-a-day can be used for finding a interesting attack.
+
+SSL/TLS is used for establishing a secure connection online.
+
+forwared secrecy is that you are secured even though if a key is broken.
+
+RootCA is selfsigning and sign other certifictes and then issues other certificates.
 
