@@ -1,0 +1,2 @@
+Unity notes: hukkommelses adresser 0-3 er for at flytte data fra FPGA'en TIL pc'en og 4-7 er til er flytte fra PC til FPGA.
+Addresserne kommer af grupper på 4 af gangen.

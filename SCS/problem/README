@@ -1,0 +1,32 @@
+###############################################################################
+You have accidentally *cough* come by a pcap file (traffic.pcapnc.gz) with data 
+from a target browsing his facebook. You also have a keyring program that 
+outputs the master key used for the traffic, given the right password (get_key). 
+
+The goal of this 3-step exercise is to hack the poor guys facebook account and 
+write a greeting on his wall, proving that you succeeded.
+
+###############################################################################
+
+You have found a python script, in some dark corner of the internet, that can 
+time how long it takes to make a password attempt (time_pw_attempt.py).
+
+1. Modify the time_pw_attempt.py program and try to break the password using 
+time as a side channel. 
+
+###############################################################################
+
+You know two nice disassemblers. One is an online service 
+(onlinedisassembler.com) and the other is a java gui (pnfsoftware.com/jeb/) 
+
+2. Disassemble the program and see if you can retrieve the password or the key. 
+
+###############################################################################
+
+Now that you have the master key, you can decrypt the traffic in the pcap file 
+and analyse it for interesting secrets.
+
+3. Hack the poor guys facebook account and leave a message (from himself) on his 
+wall.
+
+###############################################################################

@@ -50,3 +50,72 @@ forwared secrecy is that you are secured even though if a key is broken.
 
 RootCA is selfsigning and sign other certifictes and then issues other certificates.
 
+*****  Nov 1 - 2018  ***** 
+Main attack surfaces:
+Software
+USB /Hardware
+Network
+
+Keylogger - could be a USB dongle one put between the keyboard and computer. You can protect against it by locking your computer away.
+
+How to protect against a virtual device - Rubber ducky works as some device (keyboard f.x. ) and starts to do all the stuff af user can do. Virtualized through the hardware, USB dongle.
+
+What is a network tap and how to protect against it. - Encrypt traffic. hide wires etc.
+
+timing side-channel attack for a simple passwrd: looking on the time it takes to respond to the  password. 
+
+Explain the reasons for hacking hardware: Get access to extra features. Get access to encryption keys/ data in general. Stealing etc. Encrypt firmware for extra security.
+
+What is disassembly and how can we protect against it? - Takes a binary code and makes it to somewhat readable assambly code. Again encryption.
+
+Explain virtual memory - https://en.wikipedia.org/wiki/Virtual_memory  
+
+Explain fault attacks - Provoke faults by:
+	- Heat
+	- Radiation
+	- unintended use
+	- Laser
+	- Electro-magnetic impulses
+	- UV lights
+	- ...
+Stuck-at faults - DDoS. Annoying. Dont really do much other.
+Bit-flip fault - typically in memory
+set/reset faults
+Random faults - break a statemachine by misusing the statemachine and get the statemachine into a "illegal" state. Spillemaskiner is espicially a machine where people wanted to break the statemachine to cash out
+
+- Transient
+- Permanent
+- Destructive
+
+- Preciese control 
+- Loose control
+- no control
+(control over location or over time)
+Something about if you flip one bit, two bit or more.
+
+
+Explain rowhammer -
+basically a attack where you attack the physical ware. 2 years old approx since google announced it. Still an active attack. People can get out of containers and acces other people containers. Cellphones are suseptiable to this attack!
+
+The basic of rowhammer is explain by first understanding the DRAM cell and how it works!
+Cache mememory will be asked from the CPU "do you have this in memory" to level 1 chache. If it does not then i will asked level 2 cache. If it does not have it either it will fetch it in the DRAM and put it up to level 2 cache and then level 1 and lastly the CPU.
+
+The central part of this attack is that you "hammer" two rows and flush the cache. We do that 1.2M times per 64ms refrrash of the ram.
+
+We need to ask the page table of where the memory is located. We do not have write rights to the page table. however we have write acces to the physical memory.
+this means we "spray" the physical memory with pagetables and then we start hammering and we want to induce a bitflip. When we get the bit flip the pagetable will point to something else!
+And then we can write our own pagetable with read/write rights i.e acces to entire memory.
+
+Then we find a SUID program(i.e ping) which has sudo priviliges!
+Overwrite that program with your own code.
+NOW you can run your own code as root.
+
+PROTECTION against it.
+Larger capacitors. - needs more charge to read the RAM.
+Shorter refresh periods. - instead of 64ms then go to 32ms but then you pay with power consumption and acces.
+Disable the 'clflush' - done by google and amazon. It is implemented in the assambly structure so that is interesting.
+Compile a kernel that does not support ping and other sudo programs not needed when deploying.
+
+Explain meltdown -
+
+Out-of-order execution
