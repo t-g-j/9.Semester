@@ -1,0 +1,25 @@
+\section{Project description}
+This project is about different exploits in the Address Resolution Protocol(ARP). The idea of the this project is to shed light on to this protocol and how the exploits works.
+This report documents some of the exploits which can be used by an attacker and how a defender defends against those types of attacks and exploits.
+
+
+\section{Background information}
+The exploits described all starts with the ARP and its inherent weakness'. The ARP is located at the network layer in the OSI model which is the layer in charge of switching and routing from node to node.*2 ARP is a communication protocol used for discovering addresses like MAC addresses which is associated with a IPv4 address typically.
+
+
+\section{Type of attacks}
+
+	\subsection{}
+
+	\subsection{}
+
+\section{Defence/Countermeasure}
+
+\section{Reflections}
+
+
+
+\section{Reflections}
+
+webopedia - Used for explaining the OSI model*1
+https://www.webopedia.com/quick_ref/OSI_Layers.asp
