@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../WaveGenerator.srcs/sources_1/new/sinWave.vhd" \
+"../../../../WaveGenerator.srcs/sources_1/new/triWave.vhd" \
+"../../../../WaveGenerator.srcs/sim_1/new/TB_waveGen.vhd" \
+
+# Do not sort compile order
+nosort

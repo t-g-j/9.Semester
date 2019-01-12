@@ -1,0 +1,47 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../unity_exercise.srcs/sources_1/new/ADC_sensor.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/Fifo.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/Synchronizer.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/FifoCtrl.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/FifoReadPort.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/FifoWritePort.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/RegFile2.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/blink_led.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/checksum.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/clock_gen.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/fifo_in_mux.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/fifo_out_mux.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/dual_fifo_mux.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/fifo_reg.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/log_pkg.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/util_pkg.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/rr_prio_enc.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/pulse_gen.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/gab_link_al_submngr.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/gab_link_al_fsm.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/gab_link_al_subgrp.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/mod_m_counter.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/pwm_8bit.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/ram_rwrw.vhd" \
+"../../../../unity_exercise.srcs/sources_1/new/spi_ctrl.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_rx.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_tx.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_asynch.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_gab_link_dl_ascii_dec.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_gab_link_dl_rx_fsm.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_gab_link_dl_tx_fsm.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_gab_link_dl_ascii_enc.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_gab_link_dl.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_gab_link.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/wb_classic_interface.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/wb_mst_ctrl.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/uart_wb_link.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/unity_ctrl.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/wb_slv_mem_ctrl.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/wb_mem.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/UNITY_SRC/wrap_unity.vhd" \
+"../../../../../../../9.Semester/Robot_electronics/W7/code/pl_top.vhd" \
+
+# Do not sort compile order
+nosort

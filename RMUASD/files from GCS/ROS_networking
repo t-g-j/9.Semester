@@ -1,0 +1,7 @@
+Setup the ROS_masters IP
+
+export ROS_MASTER_URI=http://hal:11311
+
+If the machine cannot be resolved by name e.i finde each by just setting the
+ROS master IP then assign each(slave) machines IP
+

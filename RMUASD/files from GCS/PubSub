@@ -1,0 +1,14 @@
+## Publishers
+# Name1 sends between 1 & 0 to indicate whether to load or unload crate
+# Name2 sends between 1 & 0 to indicate whether to takeoff or do nothing
+
+name1= rospy.Publisher('loading',Integer,queue_size=1)
+name2= rospy.Publisher('Takeoff',Integer,queue_size=1)
+
+
+## Subscribers
+# Name3 recieves between 0 & 4 to indicate which state the drone is in(flying,landing,docking,takeoff)
+# Name4 recieves between a float value which is the ETA of the drone
+
+name3= rospy.Subscriber('status',Integer,queue_size=1)
+name4= rospy.Subscriber('est_time',Float64,queue_size=1)

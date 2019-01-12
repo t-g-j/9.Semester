@@ -1,0 +1,41 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed Oct 24 11:52:03 2018
+| Host         : tj-mac running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_drc -file unity_excercise_design_1_wrapper_drc_routed.rpt -pb unity_excercise_design_1_wrapper_drc_routed.pb -rpx unity_excercise_design_1_wrapper_drc_routed.rpx
+| Design       : unity_excercise_design_1_wrapper
+| Device       : xc7z010clg225-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 1          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net unity_excercise_design_1_i/pl_top_0/U0/UNITY_TOP/mem_data_in_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin unity_excercise_design_1_i/pl_top_0/U0/UNITY_TOP/mem_data_in_reg[3]_i_1/O, cell unity_excercise_design_1_i/pl_top_0/U0/UNITY_TOP/mem_data_in_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

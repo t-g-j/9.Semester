@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="unity_excercise_design_1_wrapper_hw_platform_0-target"/>
+	<item value="unity_excercise_design_1_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="/home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.sdk/sdk_unity_exercise_app2/Debug/sdk_unity_exercise_app2.elf" key="unity_excercise_design_1_wrapper_hw_platform_0-fsblFile"/>
+	<item value="false" key="unity_excercise_design_1_wrapper_hw_platform_0-blankCheck"/>
+	<item value="/home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.sdk/BOOT.mcs" key="unity_excercise_design_1_wrapper_hw_platform_0-imgFile"/>
+	<item value="Auto Detect" key="unity_excercise_design_1_wrapper_hw_platform_0-device"/>
+	<item value="" key="unity_excercise_design_1_wrapper_hw_platform_0-offSet"/>
+	<item value="qspi_single" key="unity_excercise_design_1_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="unity_excercise_design_1_wrapper_hw_platform_0-verifyFlash"/>
+</section>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg225-1" LaunchTime="1539779955">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="delete_blk_design_1_wrapper.drc"/>
+  <File Type="BG-BGN" Name="delete_blk_design_1_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="delete_blk_design_1_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="delete_blk_design_1_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="delete_blk_design_1_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="delete_blk_design_1_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="delete_blk_design_1_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="delete_blk_design_1_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="delete_blk_design_1_wrapper.msk"/>
+  <File Type="BG-BIN" Name="delete_blk_design_1_wrapper.bin"/>
+  <File Type="BG-BIT" Name="delete_blk_design_1_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="delete_blk_design_1_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="delete_blk_design_1_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="delete_blk_design_1_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="delete_blk_design_1_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="delete_blk_design_1_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="delete_blk_design_1_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="delete_blk_design_1_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="delete_blk_design_1_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="delete_blk_design_1_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="delete_blk_design_1_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="delete_blk_design_1_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="delete_blk_design_1_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="delete_blk_design_1_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="delete_blk_design_1_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="delete_blk_design_1_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="delete_blk_design_1_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="delete_blk_design_1_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="delete_blk_design_1_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="delete_blk_design_1_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="delete_blk_design_1_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="delete_blk_design_1_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="delete_blk_design_1_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="delete_blk_design_1_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="delete_blk_design_1_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="delete_blk_design_1_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="delete_blk_design_1_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="delete_blk_design_1_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="delete_blk_design_1_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="delete_blk_design_1_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="delete_blk_design_1_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="delete_blk_design_1_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="delete_blk_design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="delete_blk_design_1_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="delete_blk_design_1_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="delete_blk_design_1_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="delete_blk_design_1_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="delete_blk_design_1_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="delete_blk_design_1_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="delete_blk_design_1_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="delete_blk_design_1_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="delete_blk_design_1_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="delete_blk_design_1_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="delete_blk_design_1_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="delete_blk_design_1_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="delete_blk_design_1_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="delete_blk_design_1_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="delete_blk_design_1_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="delete_blk_design_1_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="delete_blk_design_1_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="delete_blk_design_1_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/delete_blk_design_1/hdl/delete_blk_design_1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delete_me_file.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="delete_blk_design_1_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/delete_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/delete_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

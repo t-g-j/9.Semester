@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = MCS
+the_ROM_image:
+{
+	[bootloader]/home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.sdk/sdk_unity_exercise_app2/Debug/sdk_unity_exercise_app2.elf
+	/home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.runs/impl_1/unity_excercise_design_1_wrapper.bit
+}

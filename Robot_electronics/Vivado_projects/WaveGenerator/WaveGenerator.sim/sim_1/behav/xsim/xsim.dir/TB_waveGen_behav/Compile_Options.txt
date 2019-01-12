@@ -1,0 +1,1 @@
+-wto "24c54dfe6b3a4c0592b57e66418f363b" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "TB_waveGen_behav" "xil_defaultlib.TB_waveGen" -log "elaborate.log" 
