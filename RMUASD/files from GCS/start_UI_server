@@ -1,0 +1,13 @@
+#! /bin/sh
+echo "Starting UI server"
+
+#roscore &
+echo "Started a roscore"
+
+
+#service apache2 restart
+echo "started the apache server"
+
+#roslaunch rosbridge_server rosbridge_websocket.launch &
+echo "Started the websocket"
+

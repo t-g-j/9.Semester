@@ -1,0 +1,12 @@
+
+{ 
+    crc :  7759513620679792378  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto be7c2b78988341a9bfc20972d47e8912 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot delete_blk_design_1_wrapper_behav xil_defaultlib.delete_blk_design_1_wrapper" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:07:38" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/delete_blk_design_1_wrapper_behav/xsimk\"   \"xsim.dir/delete_blk_design_1_wrapper_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/delete_blk_design_1_wrapper_behav/obj/xsim_1.lnx64.o\" \"/home/tj/Documents/Xilinx/Vivado/2018.2/lib/lnx64.o/librdi_simulator_kernel.so\"  \"/home/tj/Documents/Xilinx/Vivado/2018.2/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

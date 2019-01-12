@@ -1,0 +1,6 @@
+set_property IOSTANDARD LVCMOS33 [get_ports A_0]
+set_property IOSTANDARD LVCMOS33 [get_ports B_0]
+set_property IOSTANDARD LVCMOS33 [get_ports Q_0]
+set_property PACKAGE_PIN E11 [get_ports A_0]
+set_property PACKAGE_PIN F12 [get_ports B_0]
+set_property PACKAGE_PIN E13 [get_ports Q_0]

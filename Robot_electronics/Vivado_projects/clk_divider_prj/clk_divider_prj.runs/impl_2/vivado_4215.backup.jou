@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct 22 16:21:47 2018
+# Process ID: 4215
+# Current directory: /home/tj/Documents/Xilinx/Projects/clk_divider_prj/clk_divider_prj.runs/impl_2
+# Command line: vivado -log clk_divider.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source clk_divider.tcl -notrace
+# Log file: /home/tj/Documents/Xilinx/Projects/clk_divider_prj/clk_divider_prj.runs/impl_2/clk_divider.vdi
+# Journal file: /home/tj/Documents/Xilinx/Projects/clk_divider_prj/clk_divider_prj.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source clk_divider.tcl -notrace

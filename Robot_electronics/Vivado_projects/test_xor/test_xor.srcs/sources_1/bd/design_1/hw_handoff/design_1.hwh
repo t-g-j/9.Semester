@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct 17 14:48:12 2018" VIVADOVERSION="2018.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="trenz.biz:te0722_7s:part0:1.0" DEVICE="7z007s" NAME="design_1" PACKAGE="clg225" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="Q_0" SIGIS="undef" SIGNAME="my_test_file_0_Q">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="my_test_file_0" PORT="Q"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_0" SIGIS="undef" SIGNAME="External_Ports_A_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="my_test_file_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_0" SIGIS="undef" SIGNAME="External_Ports_B_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="my_test_file_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/my_test_file_0" HWVERSION="1.0" INSTANCE="my_test_file_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="my_test_file" VLNV="xilinx.com:module_ref:my_test_file:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_my_test_file_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q" SIGIS="undef" SIGNAME="my_test_file_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

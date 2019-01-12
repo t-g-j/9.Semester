@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8721199564443999742  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 048fc232960e44879ebe974bbbc190dd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot clk_divider_behav xil_defaultlib.clk_divider" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:07:38" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/clk_divider_behav/xsimk\"   \"xsim.dir/clk_divider_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/clk_divider_behav/obj/xsim_1.lnx64.o\" \"/home/tj/Documents/Xilinx/Vivado/2018.2/lib/lnx64.o/librdi_simulator_kernel.so\"  \"/home/tj/Documents/Xilinx/Vivado/2018.2/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

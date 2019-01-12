@@ -1,0 +1,73 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 10/20/2018 10:12:47 AM
+-- Design Name: 
+-- Module Name: tb_clk_divider - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity tb_clk_divider is
+--  Port ( );
+end tb_clk_divider;
+
+architecture Behavioral of tb_clk_divider is
+
+component comb -- Combonent to test
+-- Ports from testing file
+    port(
+        clk_in      : in STD_LOGIC;
+        dummie      : out STD_LOGIC;
+        divider_o   : out STD_LOGIC_VECTOR(3 DOWNTO 0)
+        
+        );
+    end component;
+-- Internal signals
+signal clk_in    : STD_LOGIC := '0';
+signal myVector : STD_LOGIC_VECTOR(3 DOWNTO 0):= (others => '0');
+signal dummie    : STD_LOGIC := '0';
+-- Clock period
+constant CLK_PERIOD: time := 10 ns;
+    
+begin
+
+-- initiate component
+UUT: comb port map(
+    clk_in      => clk_in,
+    dummie      => dummie,
+    divider_o => myVector
+    );
+
+Clk_process :process
+begin
+    clk_in <= '0';
+    wait for CLK_PERIOD/2;  --for half of clock period clk stays at '0'.
+    clk_in <= '1';
+    wait for CLK_PERIOD/2;  --for next half of clock period clk stays at '1'.
+end process;
+
+end Behavioral;

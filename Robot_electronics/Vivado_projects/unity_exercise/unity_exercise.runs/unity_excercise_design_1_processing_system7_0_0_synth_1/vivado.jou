@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov  7 09:37:54 2018
+# Process ID: 19414
+# Current directory: /home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.runs/unity_excercise_design_1_processing_system7_0_0_synth_1
+# Command line: vivado -log unity_excercise_design_1_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source unity_excercise_design_1_processing_system7_0_0.tcl
+# Log file: /home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.runs/unity_excercise_design_1_processing_system7_0_0_synth_1/unity_excercise_design_1_processing_system7_0_0.vds
+# Journal file: /home/tj/Documents/Xilinx/Projects/unity_exercise/unity_exercise.runs/unity_excercise_design_1_processing_system7_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source unity_excercise_design_1_processing_system7_0_0.tcl -notrace

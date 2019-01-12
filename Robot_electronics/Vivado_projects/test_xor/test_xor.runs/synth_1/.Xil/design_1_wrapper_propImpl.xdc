@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/tj/Documents/Xilinx/Projects/test_xor/test_xor.srcs/constrs_1/new/xor_const.xdc rfile:../../../test_xor.srcs/constrs_1/new/xor_const.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E11 [get_ports A_0]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F12 [get_ports B_0]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E13 [get_ports Q_0]

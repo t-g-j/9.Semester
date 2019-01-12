@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../test_project_1.srcs/sources_1/new/delete_me_file.vhd" \
+"../../../../test_project_1.ip_user_files/bd/delete_blk_design_1/ip/delete_blk_design_1_delete_me_file_0_0/sim/delete_blk_design_1_delete_me_file_0_0.vhd" \
+"../../../../test_project_1.ip_user_files/bd/delete_blk_design_1/sim/delete_blk_design_1.vhd" \
+"../../../../test_project_1.srcs/sources_1/bd/delete_blk_design_1/hdl/delete_blk_design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
