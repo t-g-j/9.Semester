@@ -1,5 +1,9 @@
+clear, colse all, clc
+
+
 %% AI project (Artificial skin) data processing
-load('/home/tgj/Documents/9.Semester/AI/AI_variables.mat') 
+%load('/home/tgj/Documents/9.Semester/AI/AI_variables.mat') 
+load('/home/tj/Documents/9.Semester/AI/AI_variables.mat') 
 
 
 %% 3mm
