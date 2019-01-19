@@ -12,6 +12,8 @@ load('/home/tgj/Documents/9.Semester/AI/AI_variables.mat')
 %processData(x30_3mm_0_0_50.b2)
 
 %%
+dataList2 =  [x30_3mm_1_1_50.b1];
+dataList2 = [dataList2 x30_3mm_1_1_50.b2];
 
 dataList =  [x30_3mm_1_1_50.b1 
             ,x30_3mm_1_1_50.b2 
@@ -138,12 +140,6 @@ for counter = 1:N_dataList(2)
 
 end
 
-%% Test zone
-
-C1=[1 2 3 4]';
-C2=[1 2 3 4 5]';
-C={C1,C2};
-C(1)
 
 %% Finding outliers
 function noOutLier = removeOutliers(x)

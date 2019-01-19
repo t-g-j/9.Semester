@@ -22,7 +22,7 @@ dataList =  {x30_3mm_0_0_50.b1
             ,x30_5mm1_neg1_50.b2
             ,x30_5mm_1_1_50.b1
             ,x30_5mm_1_1_50.b2
-            ,
+            
             % 10mm
             ,x20_10mm_0_0_50.b1
             ,x20_10mm_0_0_50.b2
@@ -53,59 +53,46 @@ dataListNames =['x30_3mm_0_0_50.b1'
              'x20_10m_1_1_50.b2'
              'x30_10mm0_0_50.b1'
              'x30_10mm0_0_50.b2'];
-         %%
-% processData(x30_3mm_1_1_50.b1)
-% processData(x30_3mm_1_1_50.b2)
-% 
-% processData(x30_3mm_neg1_1_50.b1)
-% processData(x30_3mm_neg1_1_50.b2)
-% 
-% 
-% processData(x30_3mm_neg1_neg1_50.b1)
-% processData(x30_3mm_neg1_neg1_50.b2)
-% 
-% % 5mm
-% processData(x30_5mm_0_0_50.b1)
-% processData(x30_5mm_0_0_50.b2)
-% 
-% processData(x30_5mm1_neg1_50.b1)
-% processData(x30_5mm1_neg1_50.b2)
-% 
-% processData(x30_5mm_1_1_50.b1)
-% processData(x30_5mm_1_1_50.b2)
-% 
-% processData(x30_5mm_0_0_50.b1)
-% processData(x30_5mm_0_0_50.b2)
-% 
-% % 10mm
-% processData(x20_10mm_0_0_50.b1)
-% processData(x20_10mm_0_0_50.b2)
-% 
-% processData(x20_10mm_1_1_50.b1)
-% processData(x20_10mm_1_1_50.b2)
-% 
-% processData(x30_10mm0_0_50.b1)
-% processData(x30_10mm0_0_50.b2)
+%% Manuel preprocessing of the data (cutting away samples after visual inspections.
+%dataList{}= dataList{counter}(4000:end,1)
+dataList{20}= dataList{20}(3*10^4:end,1)
+dataList{19}= dataList{19}(3*10^4:end,1)
 
+dataList{13}= dataList{13}(0.6*10^4:end,1)
+dataList{14}= dataList{14}(0.6*10^4:end,1)
 
-         %% display(dataName)
+dataList{12}= dataList{12}(0.5*10^5:end,1)
+dataList{11}= dataList{11}(0.5*10^5:end,1)
+
+dataList{3}= dataList{3}(5*10^4:end,1)
+dataList{4}= dataList{4}(5*10^4:end,1)
+
+dataList{1}= dataList{1}(1:3.8*10^5,1)
+dataList{2}= dataList{2}(1:3.8*10^5,1)
+
+%% display(dataName)
 N_dataList = size(dataListNames);
 counter = 1
-for counter = 1:N_dataList(1)-1
+for counter = 1:N_dataList(1)
     tmp = dataListNames(counter,:)
     processData(dataList{counter},tmp)
-    counter=counter+1
+    %counter=counter+1 %No need for function does that :) :) I think
 end    
 
 
 
 function processed = processData(data,dataNames)
 dataName = dataNames;
+
 display(dataName)
 display('original')
-figure('Name', strcat('original - ', dataName))
+%figure('Name', strcat('original - ', dataName))
+figure('Name', strcat('', dataName))
+%title(strrep(dataName,'_','\_'))
+
+subplot(2,2,1);
 plot(data)
-title(strcat('original - ', dataName))
+title(strcat('original ', ''))
 xlabel('sample')
 ylabel('Value')
 %% Remove outliers
@@ -114,10 +101,12 @@ ylabel('Value')
     mu = mean(data)
     std_var = std(data)
     data(data>mean(data)+n*std(data))=[];
-    data(data<mean(data)-80)=[];
+    data(data<mean(data)-60)=[];
 %  will take care of discarding values that are n standard deviation above the mean of a. 
 % https://stackoverflow.com/questions/15374193/removing-extreme-values-in-a-vector-in-matlab
-    figure('Name', strcat('Removed outliers - ', dataName))
+    %figure('Name', strcat('Removed outliers - ', dataName))
+    
+    subplot(2,2,2);
     plot(data)
     title('removed outliers')
     xlabel('sample')
@@ -125,23 +114,25 @@ ylabel('Value')
 
 new = data;
 %% Lowpass filter on removed outliers
-    figure('Name', strcat('Applied lowpass - ', dataName))
-
+    %figure('Name', strcat('Applied lowpass - ', dataName))
+    
+    subplot(2,2,3); 
     Fs = 10000; % PROPELY NOT CORRECT
     [Y,D] = lowpass(new,1,Fs);
     newOut = filter(D,new);
-    plot(newOut)
-    title(strcat('Applied lowpass - ', dataName))
+    plot(newOut(100:end,:))
+    title(strcat('Applied lowpass ', ''))
     xlabel('sample')
     ylabel('Value')
 
 
 %% Using Filtfilt
-    figure('Name', strcat('filtfilt - ', dataName))
-
+    %figure('Name', strcat('filtfilt - ', dataName))
+ 
+    subplot(2,2,4);  
     sff = filtfilt(D,new);
     plot(sff)
-    title(strcat('filtfilt - ', dataName))
+    title(strcat('filtfilt ', ''))
 
 
 
@@ -153,6 +144,7 @@ new = data;
 %newOut = filter(B,A,x30_5mm_0_0_50.b2);
 %plot(newOut)
 %
+
 
 end
 
