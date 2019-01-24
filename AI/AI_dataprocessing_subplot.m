@@ -2,8 +2,8 @@ close all, clc
 
 
 %% AI project (Artificial skin) data processing
+load('/home/tj/Documents/9.Semester/AI/AI_variables.mat') 
 %load('/home/tgj/Documents/9.Semester/AI/AI_variables.mat') 
-load('/home/tgj/Documents/9.Semester/AI/AI_variables.mat') 
 
 
 %% Loading dock!
@@ -74,7 +74,7 @@ dataList{2}= dataList{2}(1:3.8*10^5,1)
 N_dataList = size(dataListNames);
 counter = 1
 
-for counter = 1:N_dataList(1)
+for counter = 9:14%N_dataList(1)
     tmp = dataListNames(counter,:)
     processData(dataList{counter},tmp)
     %counter=counter+1 %No need for function does that :) :) I think
@@ -90,7 +90,10 @@ dataName = dataNames;
 
 display(dataName)
 display('original')
-%figure('Name', strcat('original - ', dataName))
+
+figure('Name', strcat('original - ', dataName))
+plot(data)
+
 figure('Name', strcat('', dataName))
 %title(strrep(dataName,'_','\_'))
 
@@ -119,8 +122,8 @@ ylabel('Value')
 new = data;
 %% Lowpass filter on removed outliers
     %figure('Name', strcat('Applied lowpass - ', dataName))
-    
     subplot(2,2,3); 
+    
     Fs = 10000; % PROPELY NOT CORRECT
     [Y,D] = lowpass(new,1,Fs);
     newOut = filter(D,new);
@@ -131,16 +134,22 @@ new = data;
 
 
 %% Using Filtfilt
-    %figure('Name', strcat('filtfilt - ', dataName))
+    
  
-    subplot(2,2,4);  
+    subplot(2,2,4); 
+    
     sff = filtfilt(D,new);
     plot(sff)
     title(strcat('filtfilt ', ''))
     xlabel('sample')
     ylabel('Value')
-
-
+    
+    %figure('Name', strcat('filtfilt - ', dataName))
+    %plot(sff)
+    title(strcat('filtfilt ', ''))
+    xlabel('sample')
+    ylabel('Value')
+    
 %% Butterworth removec outliers
 %Wn = 300/500;
 %[B,A] = butter(2,Wn,'low');
@@ -149,22 +158,11 @@ new = data;
 %plot(newOut)
 %
 set(gcf,'units','normalized','outerposition',[0 0 1 1])
-saveas(gcf,strcat('/home/tgj/Documents/9.Semester/AI/figure/plot_', dataName,'.png'))
+saveas(gcf,strcat('/home/tj/Documents/9.Semester/AI/tmp_figure/plot_', dataName,'.png'))
 
 
 end
 
 
-%% Finding outliers
-function noOutLier = removeOutliers(x)
-STOPFLAG = true(1);
-    while STOPFLAG
-    tf = isoutlier(x);
-    index = find(tf,1);
-    x(index) = [];
-    STOPFLAG = not(isempty(index));
-    end
-    noOutLier = x;
-end
 %%
 
