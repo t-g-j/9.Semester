@@ -73,6 +73,7 @@ dataList{2}= dataList{2}(1:3.8*10^5,1)
 %% display(dataName)
 N_dataList = size(dataListNames);
 counter = 1
+
 for counter = 1:N_dataList(1)
     tmp = dataListNames(counter,:)
     processData(dataList{counter},tmp)
@@ -147,7 +148,9 @@ new = data;
 %newOut = filter(B,A,x30_5mm_0_0_50.b2);
 %plot(newOut)
 %
+set(gcf,'units','normalized','outerposition',[0 0 1 1])
 saveas(gcf,strcat('/home/tgj/Documents/9.Semester/AI/figure/plot_', dataName,'.png'))
+
 
 end
 
@@ -163,4 +166,5 @@ STOPFLAG = true(1);
     end
     noOutLier = x;
 end
+%%
 

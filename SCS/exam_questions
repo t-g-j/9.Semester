@@ -1,0 +1,110 @@
+hink of these questions as possible openers for the third phase, after 
+ 1. your presentation and
+ 2. Q&A concerning the presented attack, we have
+ 3. general questions
+
+In case of further questions, please do not hesitate to use this mailing 
+list or contact me directly.
+
+All the best,
+
+Jan
+
+Firewall:
+    Explain internet firewalls and some of their advantages and limitations.
+    Describe different types of hackers
+    Explain host security vs. network security
+    What is a security policy ?
+    What is a dual-homed firewall ? 
+    What is a screening router?
+    What is an Application-level gateways ? 
+    What is a bastion host ? 
+    Explain tarpitting
+    Explain zones
+    What is wireshark and what can it be used for ? 
+    What are netfilter and iptables?
+    Explain Network Address Translation
+    Explain Dynamic Port NAT
+    Explain Static Port NAT
+    Explain DDoS attacks
+    Explain the SYN attack
+    Explain the idea of policy based routing
+    Explain SYN cookies
+
+
+Cryptography:
+    Explain the pros and cons of using TLS
+    Explain symmetric encryption
+    Explain asymmetric encryption
+    What does the ciphersuite specify?
+    Explain HMAC
+    Explain Diffie Hellman (without math)
+    What is the Pre-Master key and Master Key and what is their purpose ?
+    Describe the essential values in a X.509 certificate
+    What is signing and what is it used for ? 
+    What is a Certificate Signing Request(CSR) ? 
+    What is a Certificate Authority(CA)?
+    Explain chain of trust 
+    Explain how the TLS client verifies the authenticity of the TLS server
+    Explain the MITM attack
+
+
+Hardware Hacking
+    What are the main attack surfaces of a computer?
+    What is a keylogger and how can you protect against it?
+    What is a virtual user device and how to protect against it?
+    What is a network tap and how can you protect against it?
+    Explain the timing side-channel attack for a simple password.
+    Explain the reasons for hacking hardware
+    What is disassembly and how can we protect against it?
+    Explain virtual memory
+    Explain the anatomy of a program in memory
+
+    Explain fault attacks
+    Explain rowhammer
+    Explain meltdown
+
+
+Memory based attacks
+
+    This is somewhat redundant, do not be irritated by the number
+    of questions.
+
+    What is a (stack) overflow attack?
+        What does a calling convention cover?
+        Which role plays the stack for function calls?
+        What kind of data can you find on the stack?
+        What is the design problem which allows data-driven attacks?
+        How does this enable attacks?
+        (Cmp. stack and virtual memory from hardware hacking.)
+
+    How does a stack overflow attack work?
+        What is an overflow?
+        Can you give an example of an overflow?
+        Where can overflows occur and which consequences result?
+        (Cmp. memory layout in Leon's and Jan's lectures.)
+        How can the program flow be altered?
+        (Are there different ways to alter the program flow?)
+        How can you inject arbitrary code?
+        (We do not need all the gory details,
+         but the idea of what you have to do)
+        What has to be known to get the code executed?
+        What can be guessed?
+
+    Which counter measures for stack overflow attacks exist?
+        What can you do on programming level?
+        How can you spot/test for faulty code?
+        Which operating system measures exist?
+        Which hardware measures exist?
+        How can the compiler protect 
+            (i.e., changes of the program to harden against attacks)?
+        Are there (counter-)counter-counter measures?
+
+    Connection to
+        attack surface?
+        general attack scenarious?
+        what is the aim of stack overflow based attacks?
+
+    Fun question:
+        Which problems may the compiler create for the data security
+        aware programmer?
