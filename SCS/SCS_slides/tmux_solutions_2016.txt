@@ -1,0 +1,80 @@
+   Solutions for "More tmux tasks"
+   ===============================
+
+* Recreate the tmux-layout depicted on the first screenshot of tmux. 
+
+split with C-b ", then two times with C-b %. Resize with C-b C-ARROW,
+that is: Ctrl-b, then Ctrl-Up/Down/Left/Right. Rinse and repeat.
+
+
+* Attach the same tmux session from two different terminal emulators of different dimensions—what happens?
+
+Tmux resizes the session to largest common dimensions.
+
+
+* Enable vi-keybindings for copy-mode. Make the change permanent in the ~/.tmux.conf file.
+
+Edit ~/.tmux.conf and add this line
+
+set-window-option -g mode-keys vi
+
+Restart tmux or source the config file.
+
+
+* Try to copy and paste some text.
+
+'C-b [' to enter copy-mode.
+Move around with h, j, k, l.
+Start selection with Space.
+Copy selection to paste buffer with Enter (this will exit copy-mode).
+Paste text 'C-b ]'.
+
+
+* Add a keybinding, for example 'r', in ~/.tmux.conf to re-read the config file.
+
+Add the following two lines to ~/.tmux.conf
+
+unbind r
+bind r source-file ~/.tmux.conf
+
+
+* Change the prefix and make it work in a nested tmux session, ie. tmux inside tmux.
+
+Add the following three lines to ~/.tmux.conf
+
+unbind C-b
+set -g prefix C-a
+
+
+* Make keybindings so navigating panes can be done with h, j, k, and l instead of the arrow keys.
+
+Add the following eight lines to ~/.tmux.conf
+
+unbind-key j
+bind-key j select-pane -D
+unbind-key k
+bind-key k select-pane -U
+unbind-key h
+bind-key h select-pane -L
+unbind-key l
+bind-key l select-pane -R
+
+
+* Split an existing tmux window horizontally without attaching the session.
+
+> tmux split-window -h -t sessionName
+
+
+* Make the prefix work in a nested tmux session.
+
+Add the following line to ~/.tmux.conf after 'set -g prefix C-a':
+
+bind C-a send-prefix
+
+
+* Make the numbering of panes and windows start from 1 instead of 0
+
+Add the following two lines to ~/.tmux.conf
+
+set -g base-index 1
+setw -g pane-base-index 1

@@ -100,7 +100,7 @@ basically a attack where you attack the physical ware. 2 years old approx since 
 The basic of rowhammer is explain by first understanding the DRAM cell and how it works!
 Cache mememory will be asked from the CPU "do you have this in memory" to level 1 chache. If it does not then i will asked level 2 cache. If it does not have it either it will fetch it in the DRAM and put it up to level 2 cache and then level 1 and lastly the CPU.
 
-The central part of this attack is that you "hammer" two rows and flush the cache. We do that 1.2M times per 64ms refrrash of the ram.
+The central part of this attack is that you "hammer" two rows and flush the cache. We do that 1.2M times per 64ms refresh of the ram.
 
 We need to ask the page table of where the memory is located. We do not have write rights to the page table. however we have write acces to the physical memory.
 this means we "spray" the physical memory with pagetables and then we start hammering and we want to induce a bitflip. When we get the bit flip the pagetable will point to something else!

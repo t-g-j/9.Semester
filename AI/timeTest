@@ -1,0 +1,23 @@
+#! /bin/bash
+# A script designed for measuring data points for X seconds
+
+echo -e "Measuring for $1 seconds"
+
+timeout 5s while [1]
+do
+echo "magnus sux" 
+done
+
+ 
+
+
+#start=$1
+#echo  "Magnus sux"
+#duration=$(( SECONDS - start ))
+
+
+#grep $@ &
+#PID=$!
+#sleep 30 && kill $PID 2>/dev/null &
+#wait $PID
+#exit 0
